@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding="utf-8"?> 
+<createModel>
+	<model>0</model>
+	<mode>0</mode>
+	<dimensions>
+		<x>128</x>
+		<y>128</y>
+		<z>128</z>
+	</dimensions>
+	<tissue>
+		<ID>0</ID>
+		<name>above</name>
+		<layerdepth>30</layerdepth>
+		<thickness>0.3</thickness>
+		<density>0</density>
+		<anisotropy>0</anisotropy>
+		<mua>0</mua>
+		<mus>0</mus>
+		<refraction>1</refraction>
+	</tissue>
+	<tissue>
+		<ID>1</ID>
+		<name>something</name>
+		<layerdepth>10</layerdepth>
+		<thickness>0.1</thickness>
+		<density>120</density>
+		<anisotropy>0.9</anisotropy>
+		<mua>1</mua>
+		<mus>100</mus>
+		<refraction>1.37</refraction>
+	</tissue>
+	<tissue>
+		<ID>2</ID>
+		<name>below</name>
+		<layerdepth>30</layerdepth>
+		<thickness>0.3</thickness>
+		<density>0</density>
+		<anisotropy>0</anisotropy>
+		<mua>0</mua>
+		<mus>0</mus>
+		<refraction>1</refraction>
+	</tissue>
+
+
+	<reductionfactors>
+		<l0>0.9999</l0>
+		<l1>0.9998</l1>
+		<l2>0.999</l2>
+		<l3>0.999</l3>
+		<l4>0.999</l4>
+	</reductionfactors>
+
+	<rotation>
+		<yaw>0</yaw>		
+	</rotation>
+	
+
+	cl_int numPhotonInteractions;
+	cl_int absNumberPhotons;
+	cl_int numberPhotons;
+	std::vector<float> vStart;	
+	std::vector<float> pStart;	
+	cl_float chance;
+	cl_float w_threshold;
+	
+
+</createModel>
